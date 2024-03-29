@@ -1,0 +1,91 @@
+/* BALISES DE MESSAGE : spoiler, code, quote, tag */
+
+/* Lien-tag des utilisateurs */
+.mentiontag {
+    color: var(--color1);
+}
+
+.mentiontag:hover {
+    color: var(--textcolor);
+}
+
+/* Balise code, spoiler et hide*/
+.codebox {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Contenu code, spoiler et hide*/
+.codebox dd {
+    background: var(--neutraldark);
+    border-radius: var(--borderrad);
+    padding: 7px
+}
+
+/* Contenu code*/
+code {
+    font-family: monospace;
+    font-size: 13px;
+}
+
+/* Nom de balise code, spoiler */
+.codebox dt {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Bouton sélectionner le code */
+.selectCode {
+    float: right;
+    cursor: pointer;
+}
+
+.selectCode:hover {
+    color: var(--color1);
+}
+
+div.cont_code {
+    clear: right;
+}
+
+/* Spoiler */
+.hidebox.spoiler {}
+
+/* spoiler fermé */
+.spoiler_content {
+    display: none;
+}
+
+/* spoiler ouvert */
+.spoiler_content.hidden {
+    display: block;
+}
+
+
+/* Citation contenu */
+blockquote div {
+    padding-left: 20px;
+    color: var(--color2);
+}
+
+/* Citation mention .. a écrit */
+blockquote cite {
+    display: block;
+    margin-left: -20px;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--textcolor);
+}
+
+/* Citation pseudo */
+blockquote cite a {
+    text-decoration: none !important
+}
+
+/* Hide */
+.codebox.hidecode dd {
+    background: transparent;
+    opacity: 0.8;
+}
