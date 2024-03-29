@@ -1,0 +1,129 @@
+/* BALISES DE MESSAGE : spoiler, code, quote, tag */
+
+/* Lien-tag des utilisateurs */
+.mentiontag {
+    color: var(--color1);
+}
+
+.mentiontag:hover {
+    color: var(--textcolor);
+}
+
+/* Balise code, spoiler et hide*/
+.codebox {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Contenu code, spoiler et hide*/
+.codebox dd {
+    background: var(--neutraldark);
+    border-radius: var(--borderrad);
+    padding: 7px
+}
+
+/* Contenu code*/
+code {
+    font-family: monospace;
+    font-size: 13px;
+}
+
+/* Nom de balise code, spoiler */
+.codebox dt {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Bouton sélectionner le code */
+.selectCode {
+    float: right;
+    cursor: pointer;
+}
+
+.selectCode:hover {
+    color: var(--color1);
+}
+
+div.cont_code {
+    clear: right;
+}
+
+/* Spoiler */
+.hidebox.spoiler {}
+
+/* spoiler fermé */
+.spoiler_content {
+    display: none;
+}
+
+/* spoiler ouvert */
+.spoiler_content.hidden {
+    display: block;
+}
+
+
+/* Citation contenu */
+blockquote div {
+    padding-left: 20px;
+    color: var(--color2);
+}
+
+/* Citation mention .. a écrit */
+blockquote cite {
+    display: block;
+    margin-left: -20px;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--textcolor);
+}
+
+/* Citation pseudo */
+blockquote cite a {
+    text-decoration: none !important
+}
+
+/* Hide */
+.codebox.hidecode dd {
+    background: transparent;
+
+/*** ------------------------------- ***/
+/*** LISTE DES MEMBRES ------------- ***/
+
+.userlist {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.userlist_profil {
+    display: grid;
+    grid-template-columns: 95px auto;
+    grid-gap: 0px;
+    padding: 10px;
+    background: var(--neutral);
+    border: var(--border);
+}
+
+.userlist_avatar {}
+
+.userlist_avatar img {
+    background: var(--neutraldark);
+    border: var(--border);
+    padding: 8px;
+    width: 55px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.userlist_details {}
+
+.userlist_pseudo {
+    font-size: 23px;
+    font-family: var(--title-font);
+}
+    opacity: 0.8;
+}
