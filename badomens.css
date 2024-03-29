@@ -87,6 +87,7 @@ blockquote cite a {
 /* Hide */
 .codebox.hidecode dd {
     background: transparent;
+}
 
 /*** ------------------------------- ***/
 /*** LISTE DES MEMBRES ------------- ***/
@@ -124,6 +125,5 @@ blockquote cite a {
 .userlist_pseudo {
     font-size: 23px;
     font-family: var(--title-font);
-}
     opacity: 0.8;
 }
